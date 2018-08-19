@@ -1,4 +1,12 @@
-# How to Set Up a C language on Manjaro
+---
+title: How to Set Up a C language environment on Manjaro
+description: Just a short notes of what I had to install to get ready to compile some C language snippets in Manjaro.
+categories:
+ - tutorial
+tags: c
+---
+
+# How to Set Up a C language environment on Manjaro
 
 Just a short notes of what I had to install to get ready to compile some C language snippets in Manjaro.
 
