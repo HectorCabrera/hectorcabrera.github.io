@@ -36,5 +36,3 @@ This is a tough one, the issue is find somebody willing to take a task!
 > When you procrastinate on purpose, you’ll eventually decide whether to eliminate, automate or delegate the task, or you may find that it’s risen in significance, importance or urgency, compelling you to do it.
 
 [video](https://www.youtube.com/watch?v=y2X7c9TUQJ8)
-
-
