@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ---
 title: Take Away - Multiply your time by asking 4 questions about the stuff on your to-do list
