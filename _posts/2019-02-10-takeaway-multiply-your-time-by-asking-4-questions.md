@@ -1,17 +1,9 @@
 ---
 published: true
 ---
----
-title: Take Away - Multiply your time by asking 4 questions about the stuff on your to-do list
-description: Takes away from Multiply your time by asking 4 questions about the stuff on your to-do list
-categories:
- - take away
-tags: take-away self-improvement time-management
----
+## Take-Away :: Multiply your time by asking 4 questions about the stuff on your to-do list
 
 Original [source](https://ideas.ted.com/multiply-your-time-by-asking-4-questions-about-the-stuff-on-your-to-do-list/amp/).
-
-## Take-Away :: Multiply your time by asking 4 questions about the stuff on your to-do list
 
 **Question 1 :: Can I eliminate this task?**
 
