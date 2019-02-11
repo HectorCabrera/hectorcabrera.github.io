@@ -1,5 +1,9 @@
 ---
 published: true
+description: My take aways on Multiply your Time by Asking 4 Questions
+categories:
+  - take-away
+tags: self-improvement productivity take-away
 ---
 ## Take-Away :: Multiply your time by asking 4 questions about the stuff on your to-do list
 
