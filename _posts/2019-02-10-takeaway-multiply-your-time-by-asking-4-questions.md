@@ -25,7 +25,7 @@ Look thinks that can be automated like:
 
 This is a tough one, the issue is find somebody willing to take a task!
 
-## Should I do this task now, or can I do it later?
+### Should I do this task now, or can I do it later?
 
 > There’s a difference in waiting to do something that we know we should be doing … versus waiting to do something because we’re deciding that now is not the right time.
 
