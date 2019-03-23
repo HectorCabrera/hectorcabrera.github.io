@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 description: >-
   My notes on setting a development environment on Manjaro for a Tiva TM4C123G
   board
