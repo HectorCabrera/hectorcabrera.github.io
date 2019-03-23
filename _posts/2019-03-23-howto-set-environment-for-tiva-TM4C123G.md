@@ -95,14 +95,14 @@ gvim 99-tiva-launchpad.rules
 *99-tiva-launchpad.rule* should have the following content:
 
 ```bash
-SUBSYSTEM=="usb", ATTRS{idVendor}=="1cbe", ATTRS{idProduct}=="00fd", MODE="0660"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1cbe", ATTRS{idProduct}=="00fd", GROUP="users", MODE="0660"
 ```
-restart the udev system:
+
+Add your unix user to the *users* group
 
 ```bash
-sudo udevadm control --reload
+sudo usermod -a -G users hector
 ```
-
 
 Last, lets add debugging capabilities for our enviroment, lets add [OpenOCD](http://openocd.org/).
 
@@ -170,10 +170,9 @@ sudo ./lm4flash ~/Documents/embedded/tiva-template/build/main.bin
 
 At the end, I found another reference for Arch based distros, it can be found [here](https://www.hackster.io/tcss/upload-code-to-ti-tm4c123-using-linux-cmake-and-lm4tools-c33cec).
 
+Add lm4flash path to your PATH variable so you can flash the development board from anywhere:
 
-
-
-
-
-
+```bash
+export PATH=$PATH:$HOME/Documents/embedded/lm4tools/lm4flash
+```
 
