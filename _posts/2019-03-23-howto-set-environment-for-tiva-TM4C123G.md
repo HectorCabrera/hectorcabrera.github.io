@@ -85,11 +85,92 @@ cd lm4tools/lm4flash/
 make
 ```
 
+To flash the development board without executing everything as root, add the following udev rule:
+
+```bash
+cd  /etc/udev/rules.d/
+gvim 99-tiva-launchpad.rules
+```
+
+*99-tiva-launchpad.rule* should have the following content:
+
+```bash
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1cbe", ATTRS{idProduct}=="00fd", MODE="0660"
+```
+restart the udev system:
+
+```bash
+sudo udevadm control --reload
+```
+
+
 Last, lets add debugging capabilities for our enviroment, lets add [OpenOCD](http://openocd.org/).
 
 ```bash
 sudo pacman -S openocd
 ```
+
+### Blinking test
+
+Let's use one of the Tiva Templates examples: tiva-template/src/main.c
+
+Configure the Tiva Template for our target uM:
+
+```bash
+gvim  tiva-template/Makefile
+```
+
+It should look like this:
+
+```make
+# Tiva Makefile
+# #####################################
+#
+# Part of the uCtools project
+# uctools.github.com
+#
+#######################################
+# user configuration:
+#######################################
+# TARGET: name of the output file
+TARGET = main
+# MCU: part number to build for
+MCU = TM4C123GH6PM
+# SOURCES: list of input source sources
+SOURCES = main.c startup_gcc.c
+# INCLUDES: list of includes, by default, use Includes directory
+INCLUDES = -IInclude
+# OUTDIR: directory to use for output
+OUTDIR = build
+# TIVAWARE_PATH: path to tivaware folder
+TIVAWARE_PATH = $(HOME)/Documents/embedded/tivaware
+```
+
+I only changed my TIVAWARE_PATH.
+
+Then:
+
+```bash
+cd tiva-template
+make
+```
+
+Results are placed under *build* folder.
+
+### Flashing the board
+
+To try the compiled bin, execute:
+
+```bash
+cd lm4tools/lm4flash/
+sudo ./lm4flash ~/Documents/embedded/tiva-template/build/main.bin
+```
+
+### Final Notes
+
+At the end, I found another reference for Arch based distros, it can be found [here](https://www.hackster.io/tcss/upload-code-to-ti-tm4c123-using-linux-cmake-and-lm4tools-c33cec).
+
+
 
 
 
